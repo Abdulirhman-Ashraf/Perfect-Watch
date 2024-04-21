@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfect Watch</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--start navbar -->
+    <div class="nav" id="up">
+      <div class="logo">
+        <h2 style="letter-spacing: -2px; color: rgba(228, 212, 212, 0.891)">
+          WATCHES
+        </h2>
+      </div>
+      <ul id="links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">about</a></li>
+        <li><a href="#Reviews">Brand</a></li>
+        <li><a href="#contact">contact us</a></li>
+        <li><button id="dark"></button></li>
+      </ul>
+    </div>
+    <!-- end navbar -->
+
+    <!-- start section one -->
+    <div class="sectionOne" id="home">
+      <div class="left">
+        <h2 style="font-weight: 100; ">
+          Perfect
+          <span
+            style="color: #876b5e; font-family: Arial, Helvetica, sans-serif"
+            >Watch</span
+          >
+          for perfect people.
+        </h2>
+        <p>
+          Discover captivating stories, expand your knowledge, and embark on new
+          adventures.
+        </p>
+        <button type="button"><a href="#">ORDER NOW!</a></button>
+      </div>
+      <div class="right">
+        <img
+          src="img/7ca9f01cc5f7876304f192fba4e1e1f1-removebg-preview.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- end section one -->
+    <!-- ---------------------------------------------------------------------- -->
+    <!-- start section two -->
+    <div class="sectionTwo" id="about">
+      <div class="left">
+        <img
+          src="img/22_433303ee-0491-4eef-94e7-0aa2919affe9_2400x.webp"
+          alt=""
+        />
+      </div>
+      <div class="right">
+        <h2>
+          Product
+          <span
+            style="color: #876b5e; font-family: Arial, Helvetica, sans-serif"
+            >Overview</span
+          >
+        </h2>
+        <p>
+          Welcome to the elegant world of Reddy. Our watches blend exquisite
+          craftsmanship with timeless design, making them the perfect accessory
+          for any occasion. Each timepiece is meticulously handcrafted to ensure
+          superior quality and precision. Explore our collection and discover
+          the artistry that defines us.
+        </p>
+        <div id="counter">
+          <div class="time"></div>
+          <div class="time"></div>
+          <div class="time"></div>
+          <div class="time"></div>
+        </div>
+      </div>
+    </div>
+    <!-- end section two -->
+    <!-- =---------------------------------------------------------- -->
+
+    <!-- start section three -->
+    <div class="sectionThree" id="Reviews">
+      <h2>Our Elegant Watches</h2>
+      <div class="slider">
+        <div class="slider-images">
+          <img
+            class="active"
+            src="img/ZpG8zXDuJC70luttvlc3dAEnyYlHriRFSlQ243Et.webp"
+            alt=""
+          />
+          <img src="img/HxwzFmwXten2EzMnDQ3fWmnlZesZ5NSzcUyqrO4N.webp" alt="" />
+          <img src="img/MMcAEJ1Hh6TFp8EKN9xcT02oYAtyxKqYNQTtVlMb.webp" alt="" />
+          <img src="img/jewels-tmpl-product-img-20.webp" alt="" />
+        </div>
+        <button type="button" id="prev"><</button>
+        <button type="button" id="next">></button>
+      </div>
+    </div>
+    <!-- end section three -->
+
+    <!-- start section four -->
+    <div class="sectionFour" id="contact">
+      <h2>Get In Touch</h2>
+      <div class="name">
+        <label for="name">Your name</label><br />
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="write your name here"
+        />
+      </div>
+      <div class="email">
+        <label for="email">Your email</label><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="write your email here"
+        />
+      </div>
+      <div class="textArea">
+        <label for="textArea">Your message</label><br />
+        <textarea
+          name="textArea"
+          id="textArea"
+          cols="22"
+          rows="3"
+          maxlength="250"
+          onkeydown=" textLimit()"
+          placeholder="write message"
+        ></textarea>
+       <div style="padding: 20px; color: rgba(255, 0, 0, 0.808);" id="lettersLimit" ></div>
+
+      </div>
+    </div>
+    <!-- end section four -->
+    <!-- start footer -->
+    <div class="footer">
+      <p>© 2024 Designed By Abdo</p>
+    </div>
+    <a class="up" href="#up">^</a>
+    <!-- end footer -->
+    <script src="js/master.js"></script>
+  </body>
+</html>
