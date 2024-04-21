@@ -1,3 +1,11 @@
+// menu for li links
+let menu =document.querySelector("ul  #menu");
+let lis =document.querySelectorAll("ul li a");
+menu.onclick=function(){
+  for(let i=0;i<lis.length;i++)
+  lis[i].classList.toggle("hidden")
+}
+
 // up
 let up = document.querySelector(".up");
 
