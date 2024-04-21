@@ -471,16 +471,20 @@ label {
 
     .open {
         background-color: #491f2a95;
-        width: 140px;
-        height: 200px;
+        width: 160px;
+        height:fit-content;
         position: absolute;
         top: 30px;
-        font-size: 23px;
+        backdrop-filter:blur( 20px);
+        font-size: 20px;
         right: 20px;
         z-index: 22;
         padding-top: 30px;
         display: flex;
         flex-direction: column;
+        border-radius: 20px;
+        border: white 2px solid;
+
     }
 
     #dark {
