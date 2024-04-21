@@ -20,10 +20,12 @@ body {
     position: absolute;
     top: 35px;
 }
-#dark:hover{
+
+#dark:hover {
     background-color: white;
 
 }
+
 ul #menu {
     display: none;
 }
@@ -445,9 +447,11 @@ label {
 }
 
 @media(max-width:420px) {
-    .nav{
-position: relative;
-height: 130px;    }
+    .nav {
+        position: relative;
+        height: 130px;
+    }
+
     ul #menu {
         display: block;
         width: 40px;
@@ -460,12 +464,28 @@ height: 130px;    }
         background-color: #261f21;
         color: #d9d5d6;
     }
-    ul li a{
+
+    ul li a {
         display: none;
     }
+
+    .open {
+        background-color: #491f2a95;
+        width: 140px;
+        height: 200px;
+        position: absolute;
+        top: 30px;
+        font-size: 23px;
+        right: 20px;
+        z-index: 22;
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
     #dark {
         position: absolute;
-        right:15px;
+        right: 15px;
         top: 75px;
     }
 
@@ -485,7 +505,13 @@ height: 130px;    }
 
     .slider {
         width: 300px;
-        height: 400px;
+        height: 300px;
+    }
+
+    .footer {
+
+        padding: 20px 10px;
+
     }
 
 }

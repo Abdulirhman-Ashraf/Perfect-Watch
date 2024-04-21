@@ -1,10 +1,13 @@
 // menu for li links
-let menu =document.querySelector("ul  #menu");
-let lis =document.querySelectorAll("ul li a");
-menu.onclick=function(){
-  for(let i=0;i<lis.length;i++)
-  lis[i].classList.toggle("hidden")
-}
+let menu = document.querySelector("ul  #menu");
+let lis = document.querySelectorAll("ul li a");
+let uls = document.querySelectorAll(".nav #links");
+menu.onclick = function () {
+  for (let i = 0; i < lis.length; i++) {
+    lis[i].classList.toggle("hidden");
+  }
+  uls[0].classList.toggle("open");
+};
 
 // up
 let up = document.querySelector(".up");
@@ -95,7 +98,5 @@ let limit = document.querySelector("#lettersLimit");
 let textArea = document.querySelector("#textArea");
 function textLimit() {
   limit.innerHTML = `Total Character : ${textArea.value.length} <br>
-   Remaining Character : ${
-    250 - textArea.value.length
-  }`;
+   Remaining Character : ${250 - textArea.value.length}`;
 }
