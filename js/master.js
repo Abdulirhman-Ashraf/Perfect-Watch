@@ -3,7 +3,7 @@ let btnDark = document.getElementById("dark");
 let menu = document.querySelector("ul  #menu");
 let lis = document.querySelectorAll("ul li a");
 let uls = document.querySelectorAll(".nav #links");
-menu.onclick = function () {
+let auto=menu.onclick = function () {
   for (let i = 0; i < lis.length; i++) {
     lis[i].classList.toggle("hidden");
   }
@@ -18,6 +18,7 @@ var myScrollFunc = function () {
   var y = window.scrollY;
   if (y >= 400) {
     up.style.display = "block";
+auto();
   } else {
     up.style.display = "none";
   }
@@ -33,6 +34,7 @@ btnDark.onclick = function () {
   document.querySelector(".sectionThree").classList.toggle("dark");
   document.querySelector(".sectionFour").classList.toggle("dark");
   document.querySelector(".sectionOne .left h2").classList.toggle(".darkH2");
+  
 };
 //start date and time
 let counter = document.getElementById("counter");
