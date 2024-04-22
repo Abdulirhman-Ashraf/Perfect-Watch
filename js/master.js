@@ -1,4 +1,5 @@
 // menu for li links
+let btnDark = document.getElementById("dark");
 let menu = document.querySelector("ul  #menu");
 let lis = document.querySelectorAll("ul li a");
 let uls = document.querySelectorAll(".nav #links");
@@ -6,6 +7,7 @@ menu.onclick = function () {
   for (let i = 0; i < lis.length; i++) {
     lis[i].classList.toggle("hidden");
   }
+  btnDark.classList.toggle("hiddenBtn")
   uls[0].classList.toggle("open");
 };
 
@@ -25,7 +27,6 @@ window.addEventListener("scroll", myScrollFunc);
 
 // dark mode
 
-let btnDark = document.getElementById("dark");
 btnDark.onclick = function () {
   document.querySelector(".sectionOne").classList.toggle("dark");
   document.querySelector(".sectionTwo").classList.toggle("dark");
