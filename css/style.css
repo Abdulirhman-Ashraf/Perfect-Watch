@@ -446,7 +446,7 @@ label {
     }
 }
 
-@media(max-width:420px) {
+@media(max-width:580px) {
     .nav {
         position: relative;
         height: 130px;
