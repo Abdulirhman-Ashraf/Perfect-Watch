@@ -3,7 +3,7 @@ let btnDark = document.getElementById("dark");
 let menu = document.querySelector("ul  #menu");
 let lis = document.querySelectorAll("ul li a");
 let uls = document.querySelectorAll(".nav #links");
-let auto=menu.onclick = function () {
+menu.onclick = function () {
   for (let i = 0; i < lis.length; i++) {
     lis[i].classList.toggle("hidden");
   }
@@ -18,11 +18,18 @@ var myScrollFunc = function () {
   var y = window.scrollY;
   if (y >= 400) {
     up.style.display = "block";
-auto();
+
   } else {
     up.style.display = "none";
   }
-};
+  if (y >= 300)
+  {
+    for (let i = 0; i < lis.length; i++) {
+      lis[i].classList.remove("hidden");
+    }
+    btnDark.classList.remove("hiddenBtn")
+    uls[0].classList.remove("open");
+}}
 
 window.addEventListener("scroll", myScrollFunc);
 
